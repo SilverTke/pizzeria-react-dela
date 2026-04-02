@@ -6,12 +6,16 @@ import Navbar from "./Navbar";
 import "./App.css";
 import Home from "./Home";
 import Footer from "./Footer";
+import Register from "./Register";
+import Login from "./Login";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      {/*<Home />*/}
+      {/*<Register />*/}
+      <Login />
       <Footer />
     </>
   );
