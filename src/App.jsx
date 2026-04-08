@@ -1,17 +1,18 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
-import Navbar from "./Navbar";
-import "./App.css";
-import Home from "./Home";
+import Cart from "./Cart";
 import Footer from "./Footer";
+import Home from "./Home";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <main className="pb-4">
+        <Home />
+        <Cart />
+      </main>
       <Footer />
     </>
   );
