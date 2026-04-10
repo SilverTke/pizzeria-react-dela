@@ -6,12 +6,6 @@ const Cart = () => {
   return (
     <section id="cart">
       <h1 className="text-4xl font-bold">Carrito</h1>
-      <p>
-        Total:
-        <strong>
-          {` $${cart.reduce((acc, it) => acc + it.price * it.count, 0).toLocaleString("es-CL")}`}
-        </strong>
-      </p>
       <div id="cartContainer" className="flex gap-4 flex-col">
         {cart.map((pizza) => (
           <div
@@ -53,7 +47,19 @@ const Cart = () => {
             </div>
           </div>
         ))}
+        <p className="text-3xl">
+          Total:
+          <strong>
+            {` $${cart.reduce((acc, it) => acc + it.price * it.count, 0).toLocaleString("es-CL")}`}
+          </strong>
+        </p>
       </div>
+      <button
+        type="submit"
+        className="bg-black text-white rounded-md p-2 text-lg hover:bg-gray-500"
+      >
+        Pagar
+      </button>
     </section>
   );
 };
