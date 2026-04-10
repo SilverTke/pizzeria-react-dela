@@ -5,3 +5,7 @@ pnpm = "latest"
 [tasks.dev]
 description = "Arranca el servidor dev"
 run = "pnpm dev"
+
+[tasks.lint]
+description = "Lintea los archivos"
+run = "biome lint ."
