@@ -8,6 +8,5 @@ setup:
 start-backend:
 	cd backend && npm start
 
-start:
-	just start-backend &
+start-frontend:
 	mise r dev
