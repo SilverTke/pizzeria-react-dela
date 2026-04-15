@@ -4,6 +4,7 @@ import Cart from "./Cart";
 import Footer from "./Footer";
 import Home from "./Home";
 import Navbar from "./Navbar";
+import Pizza from "./components/Pizza";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <Cart />
       </main>
+      <Pizza />
       <Footer />
     </>
   );
