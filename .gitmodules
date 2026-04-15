@@ -1,0 +1,3 @@
+[submodule "backend"]
+	path = backend
+	url = ssh://git@git.silvertke.net:2222/SilverTke/backend-pizza-dela.git
