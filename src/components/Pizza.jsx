@@ -19,7 +19,7 @@ const Pizza = () => {
           ${pizza.price.toLocaleString("es-CL")}
         </p>
         <img src={pizza.img} className="rounded-md" />
-        <p>{pizza.descripcion}</p>
+        <p>{pizza.desc}</p>
         <h2 className="text-3xl">Ingredientes</h2>
         <ul>
           {pizza.ingredients.map((i, index) => (
