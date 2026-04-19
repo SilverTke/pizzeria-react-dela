@@ -1,0 +1,5 @@
+[daemons.api]
+run = "just start-backend"
+
+[daemons.frontend]
+run = "just start-frontend"

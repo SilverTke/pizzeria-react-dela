@@ -1,5 +1,6 @@
 [tools]
 biome = "latest"
+pitchfork = "latest"
 pnpm = "latest"
 
 [tasks.dev]
