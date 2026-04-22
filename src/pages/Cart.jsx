@@ -4,7 +4,7 @@ import { pizzaCart } from "../pizzas";
 const Cart = () => {
   const [cart, setCart] = useState(pizzaCart);
   return (
-    <section id="cart">
+    <>
       <h1 className="text-4xl font-bold">Carrito</h1>
       <div id="cartContainer" className="flex gap-4 flex-col">
         {cart.map((pizza) => (
@@ -60,7 +60,7 @@ const Cart = () => {
       >
         Pagar
       </button>
-    </section>
+    </>
   );
 };
 

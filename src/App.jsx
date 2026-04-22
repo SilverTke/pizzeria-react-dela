@@ -4,14 +4,18 @@ import Cart from "./pages/Cart";
 import Footer from "./Footer";
 import Home from "./pages/Home";
 import Navbar from "./Navbar";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Navbar />
       <main className="pb-4">
-        <Home />
-        <Cart />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
       </main>
       <Footer />
     </>

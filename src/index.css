@@ -3,8 +3,9 @@ body {
 	padding: 0;
 }
 
-#app {
+#root {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2rem 1fr 2rem;
+	min-height: 100dvh;
 }

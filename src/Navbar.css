@@ -1,8 +1,11 @@
 nav {
 	font-size: 1rem;
 	width: 100%;
+	position: sticky;
+	top: 0;
 }
 
-nav button {
+nav button,
+a {
 	--uno: "bg-none border-none hover:bg-white/20 rounded-md p-2";
 }

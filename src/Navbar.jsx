@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const total = 25000;
@@ -21,7 +22,7 @@ const Navbar = () => {
           </>
         )}
       </div>
-      <button>Total: ${total.toLocaleString("es-CL")}</button>
+      <Link to="/cart">Total: ${total.toLocaleString("es-CL")}</Link>
     </nav>
   );
 };
