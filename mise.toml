@@ -2,6 +2,7 @@
 biome = "latest"
 pitchfork = "latest"
 pnpm = "latest"
+prek = "latest"
 
 [tasks.dev]
 description = "Arranca el servidor dev"

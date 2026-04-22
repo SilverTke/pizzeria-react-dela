@@ -1,10 +1,9 @@
 import { useState } from "react";
 import heroImg from "./assets/hero.png";
-import Cart from "./Cart";
+import Cart from "./pages/Cart";
 import Footer from "./Footer";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Navbar from "./Navbar";
-import Pizza from "./components/Pizza";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Home />
         <Cart />
       </main>
-      <Pizza />
       <Footer />
     </>
   );

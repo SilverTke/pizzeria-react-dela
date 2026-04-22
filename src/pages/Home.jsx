@@ -1,9 +1,9 @@
 import { useState } from "react";
-import española from "./assets/española.jpg";
-import napolitana from "./assets/napolitana.jpg";
-import pepperoni from "./assets/pepperoni.jpg";
-import CardPizza from "./components/CardPizza";
-import Header from "./Header";
+import española from "../assets/española.jpg";
+import napolitana from "../assets/napolitana.jpg";
+import pepperoni from "../assets/pepperoni.jpg";
+import CardPizza from "../components/CardPizza";
+import Header from "../Header"
 import { useEffect } from "react";
 
 const Home = () => {
