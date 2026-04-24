@@ -1,4 +1,5 @@
 import "./CardPizza.css";
+import { Link } from "react-router-dom";
 
 /**
  *
@@ -23,7 +24,12 @@ const CardPizza = (props) => (
     </p>
     <div className="flex gap-4">
       <button className="border-black border-2 rounded-md px-4">Ver más</button>
-      <button className="bg-black text-white rounded-md px-4">Añadir</button>
+      <Link
+        to={`/pizza/${props.id}`}
+        className="bg-black text-white rounded-md px-4"
+      >
+        Añadir
+      </Link>
     </div>
   </article>
 );

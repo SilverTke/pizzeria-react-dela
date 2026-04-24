@@ -8,8 +8,9 @@ const Navbar = () => {
   return (
     <nav className="bg-green-700 text-white flex items-center justify-between gap-4">
       <div className="flex items-center">
-        <p className="font-bold">Pizzería Mamma Mía!</p>
-        <button>Home</button>
+        <Link to="/" className="font-bold">
+          Pizzería Mamma Mía!
+        </Link>
         {token ? (
           <>
             <button>Profile</button>
@@ -17,8 +18,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <button>Login</button>
-            <button>Register</button>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
           </>
         )}
       </div>
