@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
         {token ? (
           <>
-            <button>Profile</button>
+            <Link to="/profile">Profile</Link>
             <button>Logout</button>
           </>
         ) : (
