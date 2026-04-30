@@ -9,10 +9,11 @@ import "./App.css";
 import NotFound from "./pages/NotFound";
 import Pizza from "./pages/Pizza";
 import Profile from "./pages/Profile.jsx";
+import CartProvider from "./context/CartContext.jsx";
 
 function App() {
   return (
-    <>
+    <CartProvider>
       <Navbar />
       <main className="pb-4">
         <Routes>
@@ -26,7 +27,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </CartProvider>
   );
 }
 

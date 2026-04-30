@@ -1,6 +1,6 @@
 [[repos]]
 hooks = [
-	{ id = "commitlint", name = "commitlint", language = "system", entry = "pnpx commitlint -e", stages = [
+	{ id = "commitlint", name = "commitlint", language = "system", entry = "mise x -- aubx commitlint -e", stages = [
 		"commit-msg",
 	] },
 ]

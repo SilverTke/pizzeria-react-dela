@@ -1,9 +1,12 @@
+import { CartContext } from "./context/CartContext";
 import "./Navbar.css";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const total = 25000;
+  const { cart } = useContext(CartContext);
   const token = false;
+  const total = cart.reduce((acc, it) => acc + it.price * it.count, 0);
 
   return (
     <nav className="bg-green-700 text-white flex items-center justify-between gap-4">

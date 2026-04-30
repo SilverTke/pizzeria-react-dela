@@ -1,4 +1,5 @@
 [tools]
+aube = "latest"
 biome = "latest"
 pitchfork = "latest"
 pnpm = "latest"
@@ -6,7 +7,7 @@ prek = "latest"
 
 [tasks.dev]
 description = "Arranca el servidor dev"
-run = "pnpm dev"
+run = "aube dev"
 
 [tasks.lint]
 description = "Lintea los archivos"

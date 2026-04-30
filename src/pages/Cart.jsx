@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { pizzaCart } from "../pizzas";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const Cart = () => {
-  const [cart, setCart] = useState(pizzaCart);
+  const { cart, setCart } = useContext(CartContext);
   return (
     <>
       <h1 className="text-4xl font-bold">Carrito</h1>
