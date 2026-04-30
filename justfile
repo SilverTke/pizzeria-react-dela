@@ -2,7 +2,7 @@ mise-task task:
 	mise r {{task}}
 
 setup:
-	mise x -- pnpm i
+	mise x -- aube i
 	cd backend && npm i
 
 start-backend:
